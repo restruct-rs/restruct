@@ -13,8 +13,8 @@
     "windows": [
       {
         "title": "ReStruct",
-        "width": 700,
-        "height": 900,
+        "width": 1500,
+        "height": 1000,
         "visible": true,
         "decorations": false,
         "transparent": true,

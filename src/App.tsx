@@ -1,7 +1,7 @@
 "use client";
 
 import { MainPage } from "./pages/MainPage";
-import {createContext} from "react";
+import { createContext } from "react";
 
 interface TauriAppWindowContextType {
     appWindow: Window | null,
@@ -21,14 +21,10 @@ const TauriAppWindowContext = createContext<TauriAppWindowContextType>({
     closeWindow: () => Promise.resolve()
 })
 
-interface AppProps {
-    children: React.ReactNode;
-}
-
-export default function App({ children }: AppProps) {
+export default function App() {
     return (
         <div
-            className="h-screen bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] text-gray-200 flex flex-col text-xs overflow-hidden shadow-2xl select-none">
+            className="h-screen bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] text-gray-200 flex flex-col text-xs overflow-hidden shadow-2xl select-none font-mono">
             <MainPage/>
         </div>
     );
