@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "restruct",
+  "version": "0.1.0",
+  "identifier": "dev.restruct",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "ReStruct",
+        "width": 1200,
+        "height": 850
+      }
+    ],
+    "security": {
+      "csp": null,
+      "capabilities": {
+
+      }
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/icon.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  }
+}
